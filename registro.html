@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/master.css">
+			</head>
+			<body>
+				<h1 class="titulo1"> Registro</h1>
+				<section id="caja">
+				<form class="form-horizontal" method="post" action="php/registro.php">
+				<div class="form-group">
+			    <label class="control-label col-sm-2" for="nombre">Nombres:</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" name="nombres" placeholder="Nombres">
+			    </div>
+			  	</div>
+
+			    <div class="form-group">
+			    <label class="control-label col-sm-2" for="email">Apellidos:</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" name="apellidos" placeholder="Apellidos">
+			    </div>
+			  </div>
+
+			    <div class="form-group">
+			    <label class="control-label col-sm-2" for="documento">Documento:</label>
+			    <div class="col-sm-10">
+			      <input type="number" class="form-control" name="documento" placeholder=" Documento">
+			    </div>
+			  </div>
+
+			   <div class="form-group">
+			    <label class="control-label col-sm-2" for="telefono">Telefono:</label>
+			    <div class="col-sm-10">
+			      <input type="number" class="form-control" name="telefono" placeholder=" Telefono">
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label class="control-label col-sm-2" for="correo">Correo:</label>
+			    <div class="col-sm-10">
+			      <input type="email" class="form-control" name="correo" placeholder="Correo">
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
+			    <div class="col-sm-10"> 
+			      <input type="password" class="form-control" name="contrasena" placeholder="Contraseña">
+			    </div>
+			  </div>
+
+				
+			  <div class="form-group " > 
+			    <div class="col-sm-offset-2 col-sm-10 ">
+			      <button type="submit" class="btn btn-primary">Registrarse</button>
+			    </div>
+			  </div>
+
+			   <div class="form-group "> 
+			    <div class="col-sm-offset-2 col-sm-10 ">
+			      <button type="reset" class="btn btn-primary">Reiniciar</button>
+			    </div>
+			  </div>
+			</form>
+	</section>
+</body>
+</html>
