@@ -1,0 +1,16 @@
+section#detalle{
+	width: 860px;
+	height: 600px;
+	padding: 20px;
+	margin: 0px auto;
+	border: 1px solid;
+}
+div.intro{
+	width: 400px;
+	height: 400px;
+	border: 1px solid;
+	margin-right: 6px;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+}

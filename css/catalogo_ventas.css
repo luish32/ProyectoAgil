@@ -3,7 +3,7 @@
 }
 body {
   text-align: center;
-  background: url("../imgs/vine.jpg");
+  background: url("../imgs/oscuro.jpg");
 }
 section {
   width: 1300px;
@@ -71,4 +71,10 @@ img:hover {
 p:hover {
   -webkit-transform: scale(1.4);
   transform: scale(1.4);
+}
+h1#titulo{
+  font-size: 50px;
+  font-family: Arial;
+  text-align: center;
+  color: white;
 }

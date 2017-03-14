@@ -1,6 +1,14 @@
+body{
+  background: url(../imgs/fpeli.jpg);
+
+
+}
 .wrapper {    
   margin-top: 80px;
   margin-bottom: 20px;
+}
+div.container{
+  margin: 50px auto;
 }
 
 .form-signin {
