@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #4b4a5e;
+  font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+
+ul {
+  list-style-type: none;
+  position: relative;
+  right: 510px;
+  bottom: 30px;
+}
+a {
+  color: #4b4a5e;
+  text-decoration: none;
+}
+ .menu {
+  border:2px solid #4b4a5e;
+  width: 100%;
+  max-width: 360px;
+  margin: 30px auto 20px;
+  background: #FFF;
+  }
+ .menu .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 42px;
+  color: #4b4a5e;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu li:last-child .link {
+  border-bottom: 0;
+}
+
+.menu li span {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu li span.fa-angle-double-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px;
+}
+.menu li.open .link {
+  color: #b63b4d;
+}
+
+.menu li.open span {
+  color: #b63b4d;
+}
+.menu li.open span.fa-angle-double-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.menu li.default .submenu {display: block;}
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+  display: none;
+  background: #444359;
+  font-size: 14px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+ }
+
+ .submenu li {
+  border-bottom: 1px solid #4b4a5e;
+ }
+
+ .submenu a {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+  background: #b63b4d;
+  color: #FFF;
+ }
+@import url(http://fonts.googleapis.com/css?family=Anaheim);
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+    box-sizing: border-box;
+}
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+html,
+body{
+  background-color: #4b4a5e;
+  min-height: 100%;
+}
+body{
+  background-color: #4b4a5e;
+  background-image: radial-gradient(mintcream 0%, lightgray 100%);
+}
+h1{
+  border: 2px solid transparent;
+  color: #4b4a5e;
+  display: table;
+  margin: 3% auto 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Anaheim', sans-serif;
+  font-size: 3em;
+  position: relative;
+  left: 9%;
+  bottom: 250px;
+  font-weight: 400;
+  text-shadow: 0 1px white, 0 2px black;
+}
+.container{
+  margin: 4% auto;
+  width: 210px;
+  height: 140px;
+  position: relative;
+  left: 100px;
+  bottom: 150px;
+  perspective: 1000px;
+}
+#carousel{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+  animation-play-state: paused;
+}
+#carousel figure{
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 50%px;
+  left: 10px;
+  top: 10px;
+  background: black;
+  overflow: hidden;
+  border: solid 5px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+img{
+  background-size: center center;
+  -webkit-filter: grayscale(1);
+  cursor: pointer;
+  transition: all .5s ease;
+  border:none;
+    padding:0;
+    margin:0;
+    width:100%;
+    height:auto;
+
+}
+img:hover{
+  -webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+
