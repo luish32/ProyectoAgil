@@ -1,0 +1,48 @@
+h1.titulo1{
+	font-size: 40px;
+	text-align: center;
+	font-family: Arial;
+	margin-bottom: 40px;
+}
+h1.titulo2{
+			
+	font-size: 50px;
+	text-align: center;
+	font-family: Arial;
+	margin-bottom: 60px;
+	color: white;	
+		}
+h1.titulo3{
+	font-size: 40px;
+	text-align: center;
+	font-family: Arial;
+	margin-bottom: 150px;
+}
+h1.titulo4{
+	font-size: 40px;
+	text-align: center;
+	font-family: Arial;
+	margin-bottom: 100px;
+	color: white;
+}
+
+
+div.col-sm-10 input{
+			width: 400px;
+		}
+section#caja{
+
+	width: 600px;
+	height: 600px;
+	margin: 0px auto;
+	padding: 10px;
+}
+
+section#caja1{
+	margin-bottom: 40px;
+	width: 600px;
+	height: 400px;
+	margin: 0px auto;
+}
+
+

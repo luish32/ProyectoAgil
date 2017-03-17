@@ -3,8 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Consultar Pelicula</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/master.css"> 
+	<link rel="stylesheet" href="css/consultar_producto.css">
 </head>
 <body>
-	
+	<h1 class="titulo3">Consultar Pelicula</h1>
+	<form action="php/consultar_producto.php" method="post">
+		  <div class="form-group col-md-6 col-md-offset-3" >
+			    <label class="control-label col-sm-2 " for="email">Id Producto:</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" name="id_producto" placeholder="Id Producto">
+			      <div class="form-group " > <br>
+			    <div class=" col-md-6 col-md-offset-2" >
+			      <button type="submit" class="btn btn-primary">Consultar</button>
+			      <a  class="btn btn-danger" href="php/lista_producto.php">Lista de peliculas</a>
+
+			    </div>
+			  </div>
+			    </div>
+			  </div>
+	</form>
+
 </body>
 </html>

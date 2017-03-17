@@ -1,9 +1,33 @@
+<?php 
+	session_start();
+	if($_POST){
+	$con = mysqli_connect('localhost','root','','proyectoagil');
+	if(mysqli_connect_errno()){
+	echo "No se pudo conectar a la BD".mysqli_error();
+	}
+	$correo = $_POST['correo'];
+	$contrasena = $_POST['contrasena'];
+	  $sql = "SELECT nombres, apellidos FROM registro WHERE correo = '$correo' AND contrasena = '$contrasena'";
+	$query = mysqli_query($con, $sql);
+	  if(mysqli_num_rows($query) > 0){
+	  $row = mysqli_fetch_array($query);
+	  $_SESSION['nombres'] = $row['nombres']." ".$row['apellidos'];
+	  header("location: index_empleado.html"); 
+	  }else {
+	  echo "<script>
+	  alert('Email o Contraseña Incorrectos');
+	  </script>";
+	  }
+	  }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
-	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/login.css">
 </head>
 <body>

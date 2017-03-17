@@ -17,7 +17,7 @@ ul {
   bottom: 30px;
 }
 a {
-  color: #4b4a5e;
+  color: #181729;
   text-decoration: none;
 }
  .menu {
@@ -119,16 +119,18 @@ a {
 }
 html,
 body{
-  background-color: #4b4a5e;
+ background: -webkit-linear-gradient(left, rgba(22,25,26,1) 0%, rgba(32,41,46,1) 51%, rgba(24,29,31,1) 63%, rgba(39,45,48,1) 72%, rgba(17,23,26,1) 100%);
   min-height: 100%;
 }
 body{
   background-color: #4b4a5e;
   background-image: radial-gradient(mintcream 0%, lightgray 100%);
+  background: url('../imgs/f4.jpg');
+  background-size: 100%;
 }
 h1{
   border: 2px solid transparent;
-  color: #4b4a5e;
+  color: #C9C9D2;
   display: table;
   margin: 3% auto 0;
   text-transform: uppercase;
