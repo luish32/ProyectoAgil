@@ -213,3 +213,13 @@ div.container div.row-fluid{
   right: 400px;
 
 }
+
+ section#i2 img{
+    height: 300px;
+    width: 400px;
+    position: relative;
+    left: 45%;
+    top: -250px;
+}
+
+
