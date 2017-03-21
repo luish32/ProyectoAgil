@@ -117,11 +117,7 @@ a {
 *:after{
   box-sizing: border-box;
 }
-html,
-body{
- background: -webkit-linear-gradient(left, rgba(22,25,26,1) 0%, rgba(32,41,46,1) 51%, rgba(24,29,31,1) 63%, rgba(39,45,48,1) 72%, rgba(17,23,26,1) 100%);
-  min-height: 100%;
-}
+
 body{
   background-color: #4b4a5e;
   background-image: radial-gradient(mintcream 0%, lightgray 100%);
@@ -208,4 +204,12 @@ img:hover{
     transform: rotateY(360deg);
   }
 }
+div.container div.row-fluid{
+  border: 2px solid transparent;
+  width: 900px;
+  height: 400px;
+  position: relative;
+  top: 100px;
+  right: 400px;
 
+}

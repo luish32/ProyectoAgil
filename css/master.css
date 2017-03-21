@@ -26,6 +26,13 @@ h1.titulo4{
 	color: white;
 }
 
+h1.titulo5{
+	font-size: 55px;
+	font-family: Arial;
+	margin-bottom: 100px;
+	color: white;
+}
+
 
 div.col-sm-10 input{
 			width: 400px;
