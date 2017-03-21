@@ -12,10 +12,10 @@
 	<a href="gestion_empleado.php" class="btn btn-danger">Volver<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
 	<?php 
 		if ($_GET) {
-			$id = $_GET['id'];
+			$id_empleado = $_GET['id_empleado'];
 
 			$conexion = mysqli_connect('localhost', 'root', '', 'proyectoagil');
-			$insertar = mysqli_query($conexion, "SELECT * FROM empleados WHERE id=$id");
+			$insertar = mysqli_query($conexion, "SELECT * FROM empleados WHERE id_empleado=$id_empleado");
 			$row = mysqli_fetch_array($insertar);
 		}
 	 ?>

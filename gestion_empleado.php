@@ -9,8 +9,8 @@
 <body>
 	<h1 class="text-center">Gestion Empleado</h1>
 	<hr>
-	<a href="anadir_emp.php" class="btn btn-danger">Añadir<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-	<a href="index_admin.html" class="btn btn-danger">Volver<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+	<a href="anadir_emp.php" class="btn btn-danger">Añadir<i class="fa fa-pencil-square-o" aria-hid_empleadoden="true"></i></a>
+	<a href="index_admin2.html" class="btn btn-danger">Volver<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 
 	<div class="col-md-offset-3 col-md-6 ">
 	<table border="1px" class="table table-bordered">
@@ -26,9 +26,9 @@
 			<tr>
 				<td>".$row['nombre']."</td>
 				<td>
-					<a href='consultar_emp.php?id=".$row['id']."'>Consultar</a>
-					<a href='editar_emp.php?id=".$row['id']."'>Editar</a>
-					<a href='eliminar_emp.php?id=".$row['id']."'>Eliminar</a>
+					<a href='consultar_emp.php?id_empleado=".$row['id_empleado']."'>Consultar</a>
+					<a href='editar_emp.php?id_empleado=".$row['id_empleado']."'>Editar</a>
+					<a href='eliminar_emp.php?id_empleado=".$row['id_empleado']."'>Eliminar</a>
 				</td>
 			<tr>";
 		}

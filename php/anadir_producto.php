@@ -26,4 +26,4 @@
 
 
  ?>
- <a href="../index_admin.html">Regresar</a>
+ <a href="../index_admin2.html">Regresar</a>
