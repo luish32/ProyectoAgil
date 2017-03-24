@@ -55,7 +55,7 @@
 	 			echo "
 	 			<script>
 				alert('exito');
-				window.location.replace(gestion_empleado.php);
+				window.location.replace(index_admin2.html);
 	 			</script>";
 	 		}else{
 	 			echo "

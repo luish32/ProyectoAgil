@@ -11,9 +11,9 @@
 <hr>
 	<?php 
 		if ($_GET) {
-			$id = $_GET['id'];
+			$id_empleado = $_GET['id_empleado'];
 			$conexion = mysqli_connect('localhost', 'root', '', 'proyectoagil');
-			$insertar = mysqli_query($conexion, "SELECT * FROM empleados WHERE id=$id");
+			$insertar = mysqli_query($conexion, "SELECT * FROM empleados WHERE id_empleado=$id_empleado");
 			$row = mysqli_fetch_array($insertar);
 		}
 	 ?>
@@ -58,13 +58,13 @@
 
 	 	if($nombre !="" && $telefono !="" && $correo !="" && $documento !="" && $numerodoc !="" && $sexo !="");
 	 		$conexion = mysqli_connect('localhost', 'root', '', 'proyectoagil');
-	 		$insertar = "UPDATE gestionempleado SET nombre='$nombre', telefono='$telefono', correo='$correo', documento='$documento', numerodoc='$numerodoc', sexo='$sexo' WHERE id=$id";
+	 		$insertar = "UPDATE gestionempleado SET nombre='$nombre', telefono='$telefono', correo='$correo', documento='$documento', numerodoc='$numerodoc', sexo='$sexo' WHERE id_empleado=$id_empleado";
 	 		$row = mysqli_query($conexion,$insertar);
 	 		if ($row) {
 	 			echo "
 	 			<script>
 				alert('Modificado con exitos');
-				window.location.replace(gestion_empleado.php);
+				window.location.replace(index_admin2.html);
 	 			</script>";
 	 		}else{
 	 			echo "
