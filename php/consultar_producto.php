@@ -42,7 +42,7 @@
 						<a  class="btn btn-danger" href="../eliminar_producto.php?id_producto='.$row['id_producto'].'">Eliminar</a>
 					 </tr>';
 
-			}	
+			} ?>	
 			
 		?> 
 		

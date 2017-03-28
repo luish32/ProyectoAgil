@@ -7,6 +7,7 @@
 		echo "No se pudo conectar a la base de datos" . mysqli_connect_error();
 
 	} 
+	
 	$nombres= mysqli_real_escape_string($con , $_POST["nombres"]);
 	$apellidos= mysqli_real_escape_string($con , $_POST["apellidos"]);
 	$documento= mysqli_real_escape_string($con , $_POST["documento"]);

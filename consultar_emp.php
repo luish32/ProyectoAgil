@@ -3,6 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Consultar</title>
+	<style>
+		td.punt{
+			height: 200px;
+			background-size: cover;
+		}
+	</style>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
@@ -23,27 +29,31 @@
 	 <table border="1px" class="table table-bordered">
 	 	<tr>
 	 		<th  scope="row" class="danger">Nombre <i class="fa fa-pencil-square-o"></i></th>
-	 		<td><?php echo $row['nombre'] ?></td>
+	 		<td><?=$row['nombre'] ?></td>
 	 	</tr>
 	 	<tr>
 	 		<th scope="row" class="danger">Telefono <i class="fa fa-phone"></i></th>
-	 		<td><?php echo $row['telefono'] ?></td>
+	 		<td><?=$row['telefono'] ?></td>
 	 	</tr>
 	 	<tr>
 	 		<th scope="row" class="danger">Correo <i class="fa fa-envelope-o" ></i></th>
-	 		<td><?php echo $row['correo'] ?></td>
+	 		<td><?=$row['correo'] ?></td>
 	 	</tr>
 	 	<tr>
 	 	<th scope="row" class="danger">Documento <i class="fa fa-id-card-o"></i></th>
-	 		<td><?php echo $row['documento'] ?></td>
+	 		<td><?=$row['documento'] ?></td>
 	 	</tr>
 	 	<tr>
 	 	<th scope="row" class="danger">Numero Documento <i class="fa fa-plus-circle"></i></th>
-	 		<td><?php echo $row['numerodoc'] ?></td>
+	 		<td><?=$row['numerodoc'] ?></td>
 	 	</tr>
 	 	<tr>
 	 	<th scope="row" class="danger">Sexo <i class="fa fa-venus-mars"></i></th>
-	 		<td><?php echo $row['sexo'] ?></td>
+	 		<td><?=$row['sexo'] ?></td>
+		</tr><br>
+		<tr>
+	 	<th scope="row" class="danger">Imagen Perfil<i class="fa fa-user"></i></th>
+	 		<td style="background: url(<?=$row['image'] ?>)no-repeat center" class="punt" ></td>
 	 	</tr>
 	 </table>
 	 </div>

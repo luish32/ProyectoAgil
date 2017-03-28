@@ -18,8 +18,8 @@
 		}
 	 ?>
 	 <a href="gestion_empleado.php" class="btn btn-danger"><i class="fa fa-arrow-left" aria-hidden="true"></i>Volver</a>
-	 <div class="col-md-offset-3 col-md-A">
-		<form method="POST">
+	 <div class="col-md-offset-3 col-md-6">
+		<form method="POST" enctype="multipart/form-data">
 		Nombre
 		<input type="text" class="form-control" placeholder="Nombre Completo*" name="nombre" required="" value="<?php echo $row['nombre'] ?>"><br><br>
 		Telefono
@@ -42,6 +42,9 @@
 			<option <?php if ($row['sexo']== 'femenino') {echo "select";} ?> value="femenino">Femenino</option>
 			<option <?php if ($row['sexo']== 'noIdentificado') {echo "select";} ?> value="noIdentificado">Sin Identificar</option>
 		</select><br><br>
+		Imagen Perfil <i class="fa fa-at"></i>
+		<img id="avatar" src="<?=$row['image']?>">
+		<input type="file" class="form-control"  name="image" accept="image/*"><br><br>
 		<input type="submit" class="btn btn-danger" value="Modificar">
 	</form>
 	<div>
@@ -55,16 +58,21 @@
 	 	$documento = $_POST['documento'];
 	 	$numerodoc = $_POST['numerodoc'];
 	 	$sexo = $_POST['sexo'];
+	 	$nimage 	= time();
+		$path 		= $_FILES['image']['name'];
+		$extension 	= pathinfo($path, PATHINFO_EXTENSION);
+		$image 		= 'imgs/avatars/'.$nimage.'.'.$extension;
 
-	 	if($nombre !="" && $telefono !="" && $correo !="" && $documento !="" && $numerodoc !="" && $sexo !="");
+	 	if($nombre !="" && $telefono !="" && $correo !="" && $documento !="" && $numerodoc !="" && $sexo !="" && $image !="");
 	 		$conexion = mysqli_connect('localhost', 'root', '', 'proyectoagil');
-	 		$insertar = "UPDATE gestionempleado SET nombre='$nombre', telefono='$telefono', correo='$correo', documento='$documento', numerodoc='$numerodoc', sexo='$sexo' WHERE id_empleado=$id_empleado";
+	 		move_uploaded_file($_FILES['image']['tmp_name'] , $image);
+	 		$insertar = "UPDATE empleados SET nombre='$nombre', telefono='$telefono', correo='$correo', documento='$documento', numerodoc='$numerodoc', sexo='$sexo', image ='$image' WHERE id_empleado=$id_empleado";
 	 		$row = mysqli_query($conexion,$insertar);
 	 		if ($row) {
 	 			echo "
 	 			<script>
 				alert('Modificado con exitos');
-				window.location.replace(index_admin2.html);
+				window.location.replace('index_admin2.html');
 	 			</script>";
 	 		}else{
 	 			echo "
